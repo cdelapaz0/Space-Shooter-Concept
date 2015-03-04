@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
 		pos.y += moveDir.y * speed * Time.deltaTime;
 
         transform.position = pos;
-        transform.position = GameHelper.ClampPositionWithinBounds(collider2D.bounds);
+        transform.position = GameHelper.ClampPositionWithinBounds(GetComponent<Collider2D>().bounds);
 
         //// CheckOutOfBounds() tets code
         //transform.position = pos;

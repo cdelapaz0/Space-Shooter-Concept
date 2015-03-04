@@ -2,9 +2,7 @@
 using System.Collections;
 
 public class EnemyCollision : MonoBehaviour {
-
-    
-
+	
 	// Use this for initialization
 	void Start () {
 	

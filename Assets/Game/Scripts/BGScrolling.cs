@@ -21,6 +21,6 @@ public class BGScrolling : MonoBehaviour {
 			position -= 1.0f;
 		}
 
-		renderer.material.mainTextureOffset = new Vector2(position, 0);
+		GetComponent<Renderer>().material.mainTextureOffset = new Vector2(position, 0);
 	}
 }

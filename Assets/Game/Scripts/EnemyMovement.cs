@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Vexe.Runtime.Types;
 
-public class EnemyMovement : BetterBehaviour {
+
+public class EnemyMovement : MonoBehaviour {
 
     public Vector2 speed = new Vector2(5, 5);
 
@@ -16,9 +16,6 @@ public class EnemyMovement : BetterBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-
-
-
        BoundsExitFlag flags = GameHelper.CheckOutOfBounds(transform.position);
        if ((flags & BoundsExitFlag.Left) == BoundsExitFlag.Left || (flags & BoundsExitFlag.Right) == BoundsExitFlag.Right)
        {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Vexe.Runtime.Types;
 
-public class PlayerFire : BetterBehaviour {
+
+public class PlayerFire : MonoBehaviour {
 
 	public GameObject bullet = null;
 	public GameObject barrel = null;
@@ -9,7 +9,6 @@ public class PlayerFire : BetterBehaviour {
    // [SaveAttribute, HideAttribute]
     private float fireRate = 5.0f;
 
-    [Show]
     public float FireRate
     {
         get { return fireRate; }
@@ -52,8 +51,4 @@ public class PlayerFire : BetterBehaviour {
         //Debug.DrawLine(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
 	}
 
-    void OnGUI()
-    {
-               
-    }
 }
